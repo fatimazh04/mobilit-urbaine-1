@@ -1,0 +1,24 @@
+create table user (
+  id int primary key Auto_increment,
+  name varchar(30),
+  email varchar(50),
+  dateN date,
+  pswd varchar(40)
+  )
+ 
+create table annonce (
+  id int primary key Auto_increment,
+  ville_depart varchar(30),
+  ville_darrivee varchar(30),
+  dateD date,
+  nb_place int
+  )
+
+create table reservation (
+  id_reservation int primary key,
+  user_id INT,
+  annonce_id INT,
+  nombre_places INT,
+  FOREIGN KEY (user_id) REFERENCES user(id),
+  FOREIGN KEY (annonce_id) REFERENCES annonce(id)
+  )

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/homepage/css/deposerAnnonces.css" />
+    <title>Déposer une annonce</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/homepage/html/home.html">GreenVoyage</a></h1>
+      <nav>
+        <ul>
+          <li>
+            <div class="image"><img src="/homepage/icones/DSC_0187.JPG" alt="" /></div>
+            <a href="/homepage/html/profile.html">Profile</a>
+          </li>
+          <li>
+            <a href="/homepage/html/chercherAnnonces.html" style="color: #6093ff">Annonces</a>
+          </li>
+          <li><a href="/homepage/html/about.html">About</a></li>
+          <li><a href="/homepage/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Déposer une annonce</h1>
+
+    <form id="annonce-form">
+      <label for="departure-input">Ville de départ</label>
+      <select id="departure-input"></select>
+
+      <label for="destination-input">Ville d'arrivée</label>
+      <select id="destination-input"></select>
+
+      <label for="date-input">Date</label>
+      <input type="date" id="date-input" placeholder="MM/DD/YYYY" required />
+
+      <label for="seats-input">Nombre de places disponibles</label>
+      <input
+        type="number"
+        id="seats-input"
+        placeholder="Nombre de places"
+        min="1"
+        max="100"
+        required
+      /><label for="prix">Prix</label>
+      <input type="text" id="prix" placeholder="$" required />
+
+      <button id="submit-button" class="btn">Déposer l'annonce</button>
+    </form>
+
+    <script src="/homepage/Js/deposerAnnonces.js"></script>
+    <footer>
+      <p>
+        &copy; 2023 GreenVoyage. All rights reserved. |
+        <a href="/homepage/html/privacy.html">Privacy Policy</a> |
+        <a href="/homepage/html/terms.html">Terms of Service</a>
+      </p>
+    </footer>
+  </body>
+  <script type="text/javascript"></script>
+</html>

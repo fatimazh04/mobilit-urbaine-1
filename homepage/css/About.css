@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f4f4;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header ul li {
+  display: flex;
+  position: relative;
+}
+.image {
+  height: 48px;
+  width: 36px;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+.image img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  font-weight: bold;
+}
+nav li :hover {
+  text-decoration: underline;
+}
+header {
+  position: sticky;
+  top: 0%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.title {
+  margin: 3.75rem 0;
+  font-size: 3.43rem;
+  text-align: center;
+  text-decoration: line-through;
+}
+.container {
+  padding-top: 2.5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10px;
+  background-color: #fff;
+  margin-left: 370px;
+  margin-right: 370px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 0 0 gray;
+}
+.container h2 {
+  color: #000;
+  font-family: gt-eesti, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+.container p {
+  color: #5d5d5d;
+  font-weight: 300;
+  line-height: 2.75;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#totop {
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 70px;
+  height: 70px;
+}
+
+#totop:hover {
+  background-color: #e9e6e6;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+#totop img {
+  width: 50%;
+  height: 50%;
+}
+ul {
+  list-style-type: none;
+  line-height: 35px;
+}

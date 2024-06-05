@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/homepage/css/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/homepage/html/home.html">GreenVoyage</a></h1>
+      <nav>
+        <ul>
+          <li>
+            <div class="image"><img src="/homepage/html/home.html" alt="" /></div>
+            <a href="/homepage/html/profile.html">Profile</a>
+          </li>
+          <li>
+            <a href="/homepage/html/chercherAnnonces.html" style="color: #6093ff">Annonces</a>
+          </li>
+          <li><a href="/homepage/html/about.html">About</a></li>
+          <li><a href="/homepage/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Contact US</h2>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required />
+      <label for="name">Email</label>
+      <input type="text" id="email" required />
+      <label for="name">Message</label>
+      <textarea class="textbox" id="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </div>
+  </body>
+  <footer>
+    <p>
+      &copy; 2023 GreenVoyage. All rights reserved. |
+      <a href="/homepage/html/privacy.html">Privacy Policy</a> |
+      <a href="/homepage/html/terms.html">Terms of Service</a>
+    </p>
+  </footer>
+  <script type="text/javascript">
+    window.onload = function () {
+      var element = document.querySelector(".container");
+      element.classList.remove("container");
+      void element.offsetWidth; // Trigger a reflow to restart the animation
+      element.classList.add("container");
+    };
+  </script>
+</html>

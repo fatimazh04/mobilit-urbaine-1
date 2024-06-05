@@ -1,0 +1,213 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #148f77;
+}
+
+/* Sign In styles */
+/*firebase*/
+.signin {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-bottom: 4px solid #1abc9c;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 1s ease-in;
+}
+
+.signin h2 {
+  margin-top: 0;
+}
+
+.signin form {
+  display: flex;
+  flex-direction: column;
+}
+.signin label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.signin input {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.signin button[type="submit"] {
+  margin-top: 20px;
+}
+.signin button[type="submit"]:hover {
+  border-radius: 10px;
+}
+/* Sign Up styles */
+
+.signup {
+  background-color: #1abc9c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(101, 100, 100);
+  color: white;
+  padding: 40px;
+  border-bottom: 4px solid #fff;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 1s ease-in;
+}
+
+.signup h2 {
+  margin-top: 0;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.signup input {
+  border: 2px solid white;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.signup input:hover {
+  border: 2px solid black;
+}
+.signin input:hover {
+  border: 2px solid black;
+}
+.signup button[type="submit"] {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.signup button[type="submit"]:hover {
+  background-color: white;
+  color: #1abc9c;
+  border-radius: 10px;
+}
+.signup a {
+  color: blue;
+}
+.signin a {
+  color: blue;
+}
+.signin a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.signup a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+nav li :hover {
+  text-decoration: underline;
+}
+nav a {
+  font-weight: bold;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+header ul li {
+  display: flex;
+  position: relative;
+}
+.image {
+  height: 48px;
+  width: 36px;
+  position: absolute;
+  top: -8px;
+  left: -40px;
+}
+.image img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}

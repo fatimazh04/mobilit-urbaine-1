@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/homepage/css/chercherAnnonces.css" />
+    <title>Document</title>
+  </head>
+  <header>
+    <h1><a href="/homepage/html/home.html">GreenVoyage</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <div class="image"><img src="/homepage/icones/DSC_0187.JPG" alt="" /></div>
+          <a href="/homepage/html/profile.html">Profile</a>
+        </li>
+        <li><a href="/homepage/html/deposerAnnonces.html" id="pub">Publier Un Trajet</a></li>
+        <li><a href="/homepage/html/about.html">About</a></li>
+        <li><a href="/homepage/html/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <h1>Annonces</h1>
+
+    <div id="search-bar">
+      <label for="departure-input">Ville de départ</label>
+      <select id="departure-input"></select>
+
+      <label for="destination-input">Ville d'arrivée</label>
+      <select id="destination-input"></select>
+
+      <input type="date" id="date-input" />
+      <input
+        type="number"
+        id="passengers-input"
+        placeholder="Nombre de personnes"
+        min="1"
+        max="100"
+      />
+      <button id="search-button" class="btn">Rechercher</button>
+    </div>
+
+    <div id="annonces-container"></div>
+
+    <script src="/homepage/Js/chercherAnnonces.js"></script>
+    <footer>
+      <p>
+        &copy; 2023 GreenVoyage. All rights reserved. |
+        <a href="/homepage/html/privacy.html">Privacy Policy</a> |
+        <a href="/homepage/html/terms.html">Terms of Service</a>
+      </p>
+    </footer>
+  </body>
+</html>

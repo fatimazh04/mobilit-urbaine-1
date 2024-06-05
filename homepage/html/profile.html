@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/homepage/css/profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/homepage/html/home.html">GreenVoyage</a></h1>
+      <nav>
+        <ul>
+          <li>
+            <div class="image"><img src="/homepage/icones/DSC_0187.JPG" alt="" /></div>
+            <a href="/homepage/html/home.html">Profile</a>
+          </li>
+          <li>
+            <a href="/homepage/html/chercherAnnonces.html" style="color: #6093ff">Annonces</a>
+          </li>
+          <li><a href="/homepage/html/about.html">About</a></li>
+          <li><a href="/homepage/html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="profile">
+        <div class="profile-left">
+          <a href="#">Profil</a>
+          <div class="left-center">
+            <div class="image2"><img src="/homepage/icones/DSC_0187.JPG" alt="" /></div>
+            <div class="name">El Ouad Fatima Ezahrae</div>
+            <div class="caract"></div>
+          </div>
+        </div>
+        <div class="profile-right">
+          <div class="profile-right-top">
+            <a href="" class="nav-btn" id="Compte-link">Compte</a>
+            <a href="" class="nav-btn" id="Preferences-link">Preferences</a>
+          </div>
+          <div class="Compte" id="Compte">
+            <div class="Compte-center">
+              <span>Informations personnelles</span>
+              <div class="combin">
+                <label for="Email">Email</label> <input type="email" />
+              </div>
+              <div class="combin">
+                <label for="TelephonePortable">Telephone Portable</label>
+                <input type="tel" />
+              </div>
+              <div class="Compte-bottom">
+                <div class="left">
+                  <div class="combin">
+                    <label for="Nom">Nom</label>
+                    <input type="text" />
+                  </div>
+                  <div class="combin">
+                    <label for="Prenom">Prenom</label>
+                    <input type="text" />
+                  </div>
+                  <div class="combin">
+                    <label for="Civilite">Civilite</label>
+                    <select id="sexSelector">
+                      <option value="Autre">Autre</option>
+                      <option value="Monsieur">Monsieur</option>
+                      <option value="Madame">Madame</option>
+                    </select>
+                  </div>
+                  <div class="combin">
+                    <label for="Datedenaissance">Date de naissance</label>
+                    <input type="date" />
+                  </div>
+                  <div class="combin">
+                    <label
+                      for="
+                    Numéro de permis de conduire
+                    "
+                    >
+                      Numéro de permis de conduire
+                    </label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="image3"><img src="/homepage/icones/icons8-img-30.png" alt="" /></div>
+                  <div
+                    class="combin"
+                    style="margin-left: 100px; flex-direction: row; gap: 10px"
+                  >
+                    <img
+                      src="/homepage/icones/icons8-img-30.png"
+                      style="cursor: pointer"
+                      alt=""
+                    />
+                    <input
+                      type="text"
+                      placeholder="Nouvelle photo"
+                      style="padding-bottom: 10px; cursor: pointer"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <a class="btn">Enregistrer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Preferences" id="Preferences">
+        <div class="cards">
+          <div class="card1">
+            En ce qui Concerne le tabac
+            <span style="margin-left: 50px">en voiture...</span>
+            <div class="radio">
+              <input type="radio" id="fumepas" name="fav" value="fumepas" />
+              <label for="">Je ne fume pas</label><br />
+
+              <input type="radio" id="voiture" name="fav" value="voiture" />
+              <label for=""
+                >Je ne fume pas en <br /><span style="margin-left: 30px"
+                  >voiture</span
+                ></label
+              ><br />
+
+              <input type="radio" id="fume" name="fav" value="fume" />
+              <label for="">Je fume</label>
+            </div>
+          </div>
+          <div class="card1">
+            En ce qui Concerne la music <br /><span style="margin-left: 60px"
+              >en voiture...</span
+            >
+            <div class="radio">
+              <input type="radio" id="fumepas" name="fav1" value="fumepas" />
+              <label for="">
+                Je préfère rouler sans
+                <span style="margin-left: 20px">fond sonore</span> </label
+              ><br />
+
+              <input type="radio" id="fumepas" name="fav1" value="fumepas" />
+              <label for="">
+                J'ecoute la radio ou de la <br />
+                <span style="margin-left: 30px"> musique</span> </label
+              ><br />
+            </div>
+          </div>
+          <div class="card1">
+            En ce qui Concerne les <br />
+            animaux de compagnie en voiture...
+
+            <div class="radio">
+              <input type="radio" id="fumepas" name="fav2" value="fumepas" />
+              <label for="">J'accepte</label><br />
+
+              <input type="radio" id="voiture" name="fav2" value="voiture" />
+              <label for="">Je refuse </label><br />
+            </div>
+          </div>
+        </div>
+        <a class="btn">Enregistrer</a>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var links = document.getElementsByClassName("nav-btn");
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function (event) {
+        event.preventDefault();
+        // Remove "active" class from all links
+        for (var j = 0; j < links.length; j++) {
+          links[j].classList.remove("active");
+        }
+        // Add "active" class to the clicked link
+        this.classList.add("active");
+      });
+    }
+    /////////////////////////////////////////////////////
+
+    const CompteForm = document.getElementById("Compte");
+    const PreferencesForm = document.getElementById("Preferences");
+
+    const CompteLink = document.getElementById("Compte-link");
+    const PreferencesLink = document.getElementById("Preferences-link");
+
+    PreferencesForm.style.display = "none";
+
+    // Add click event listeners to the links
+    CompteLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      PreferencesForm.style.display = "none";
+      CompteForm.style.display = "block";
+    });
+
+    PreferencesLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      setTimeout(() => {
+        (CompteForm.style.display = "none"),
+          (PreferencesForm.style.display = "grid");
+      }, 100);
+    });
+  </script>
+</html>
